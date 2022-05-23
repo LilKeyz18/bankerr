@@ -20,20 +20,20 @@ void main()
 	int avail[4] = { 1, 5, 2,0 }; // These are Available Resources 
 
 	int f[5], vong[5], ind = 0;
-	for (k = 0; k < 5; k++)
+	for (k = 0; k < n; k++)
 	{
 		f[k] = 0;
 	}
 	int need[5][4];
-	for (i = 0; i < 5; i++)
+	for (i = 0; i < n; i++)
 	{
-		for (j = 0; j < 4; j++)
+		for (j = 0; j < r; j++)
 			need[i][j] = max[i][j] - alloc[i][j];
 	}
 	int y = 0;
-	for (k = 0; k < 5; k++) 
+	for (k = 0; k < n; k++) 
 	{
-		for (i = 0; i < 5; i++) 
+		for (i = 0; i < n; i++) 
 		{
 			if (f[i] == 0) 
 			{
